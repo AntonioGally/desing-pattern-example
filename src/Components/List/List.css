@@ -1,0 +1,15 @@
+.list-area {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    border: 1px solid #ddd;
+    padding: 2px;
+}
+
+.list-area>div {
+    padding: 2px 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+    margin: 2px;
+}
