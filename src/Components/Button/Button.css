@@ -1,0 +1,22 @@
+.button {
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    outline: 0;
+    border: none;
+    margin-right: 10px;
+}
+
+.add-button {
+    background-color: #4EBC3B;
+    color: white;
+}
+
+.remove-button {
+    background-color: #BE0000;
+    color: white;
+}

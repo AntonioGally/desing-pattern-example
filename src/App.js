@@ -3,6 +3,7 @@ import { useState } from "react";
 import RemoveFlow from "./Flows/RemoveFlow/RemoveFlow";
 import AddFlow from "./Flows/AddFlow/AddFlow";
 import RenderFlow from "./Flows/RenderFlow/RenderFlow";
+import Button from "./Components/Button/Button";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -19,9 +20,9 @@ function App() {
 
   return (
     <div>
-      <div>
-        <button onClick={handleAddTodo} style={{ marginRight: 10 }}>Add todo</button>
-        <button onClick={handleRemoveTodo}>Remove todo</button>
+      <div style={{ display: "flex" }}>
+        <Button onClick={handleAddTodo} label="Add todo" actionType={"add"} />
+        <Button onClick={handleRemoveTodo} label="Remove todo" actionType={"remove"} />
       </div>
       <div style={{ marginTop: 20 }}>
         {todos.map((todo) => new RenderFlow(todo).start())}
